@@ -9,7 +9,7 @@ from utils.prob_generate import prob_generate
 def main(i):
     """
 
-    :param i: i=1:根据
+    :param i: i=1:表示依据既有的序列计算分数，i=2:表示随机生成序列并计算分数。
     :return:
     """
     cp = ConfigParser()
@@ -34,7 +34,6 @@ def main(i):
         word_prob, word_prob_2 = prob_generate(prob_between_aa_file)
         produce_seq(epochs, word_prob, prob_aa_pair, word_prob_2,
                     save_file_path_2)
-
 
 
 if __name__ == '__main__':
