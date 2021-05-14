@@ -14,4 +14,5 @@ def init_index():
             i += 1
     return index_word
 
+
 INDEX_WORD = init_index()
