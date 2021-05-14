@@ -40,6 +40,6 @@ class Seq_chance:
         for seq in list(word_prob_2nd.keys()):
             word_prob_2nd[seq] = list(word_prob_2nd[seq] / np.sum(word_prob_2nd[seq]))
 
-        df = pd.DataFrame(word_prob_2nd).T
-        df.to_excel('prob_2nd.xlsx', index=True, header=False)
+        # df = pd.DataFrame(word_prob_2nd).T
+        # df.to_excel('prob_2nd.xlsx', index=True, header=False)
         return word_prob_2nd

@@ -16,4 +16,3 @@ def init_index():
 
 
 INDEX_WORD = init_index()
-print(INDEX_WORD)
