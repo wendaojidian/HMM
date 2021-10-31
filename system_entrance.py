@@ -13,7 +13,7 @@ def main(i):
     :return:
     """
     cp = ConfigParser()
-    cp.read("config.cfg")
+    cp.read("config.cfg", encoding='utf-8')
     prob_between_aa_file = cp.get('file_absolute_path', 'prob_between_aa_file')
     prob_aa_pair_file = cp.get('file_absolute_path', 'prob_aa_pair_file')
     list_source_file = cp.get('file_absolute_path', 'list_source_file')
