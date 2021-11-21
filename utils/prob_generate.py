@@ -19,6 +19,7 @@ def prob_generate(prob_cal_file_source):
 
     for seq in seq_list:
         seq_all[seq[0]].append(seq)
+    print(seq_all)
 
     Seq_tmp = Seq_chance('All', seq_list)
     return Seq_tmp.word_prob, Seq_tmp.word_prob_2nd

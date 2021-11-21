@@ -8,6 +8,7 @@ def get_base_pair(prob_file):
     :return: 各种氨基酸对应各种碱基对概率的字典
     """
     base_pair_sheet = pd.read_excel(prob_file)
+    print(base_pair_sheet)
     base_pair = {}
     tmp_base = None
     for i in range(len(list(base_pair_sheet['x']))):
